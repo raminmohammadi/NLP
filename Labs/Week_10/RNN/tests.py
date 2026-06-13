@@ -1,14 +1,14 @@
 from tensorflow.keras.layers import Embedding, SimpleRNN, Dense, Dropout, BatchNormalization
 
 
-def check_max_seq_length(max_seq_length, required_length=500):
+def check_max_seq_length(max_seq_length, required_length=100):
     """
     Checks whether the maximum sequence length is set to at least the required length.
     If not, raises a ValueError.
 
     Args:
         max_seq_length (int): The current maximum sequence length.
-        required_length (int, optional): The required minimum length. Defaults to 5000.
+        required_length (int, optional): The required minimum length. Defaults to 100.
 
     Raises:
         ValueError: If max_seq_length is less than the required_length.
